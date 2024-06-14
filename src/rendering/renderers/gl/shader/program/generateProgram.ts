@@ -20,7 +20,8 @@ import type { IGLUniformData } from '../GlProgramData';
 export function generateProgram(gl: GlRenderingContext, program: GlProgram): GlProgramData
 {
     const glVertShader = compileShader(gl, gl.VERTEX_SHADER, program.vertex);
-    const glFragShader = compileShader(gl, gl.FRAGMENT_SHADER, program.fragment);
+    const fixedFragment = `#extension GL_OES_standard_derivatives : enable\n${program.fragment}`;
+    const glFragShader = compileShader(gl, gl.FRAGMENT_SHADER, fixedFragment);
 
     const webGLProgram = gl.createProgram();
 

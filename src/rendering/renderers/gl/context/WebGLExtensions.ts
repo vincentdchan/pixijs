@@ -60,6 +60,7 @@ export interface WebGLExtensions
     textureHalfFloatLinear?: OES_texture_half_float_linear;
     colorBufferFloat?: EXT_color_buffer_float;
     vertexAttribDivisorANGLE?: ANGLE_instanced_arrays;
+    derivatives?: OES_standard_derivatives;
 
     s3tc?: WEBGL_compressed_texture_s3tc;
     s3tc_sRGB?: WEBGL_compressed_texture_s3tc_srgb;

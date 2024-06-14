@@ -1,10 +1,14 @@
 {
-  "name": "pixi.js",
+  "name": "@vincentdchan/pixi.js",
   "version": "8.1.6",
   "author": "PixiJS Team",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vincentdchan/pixijs.git"
+  },
   "files": [
     "lib",
     "dist"
